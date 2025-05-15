@@ -2,9 +2,9 @@
 ![Docker support](https://img.shields.io/badge/docker-supported-blue)
 [![License](https://img.shields.io/github/license/bigsk1/voice-chat-ai)](https://github.com/bigsk1/voice-chat-ai/blob/main/LICENSE)
 
-# Voice Chat AI 🎙️
+# Magic Chat 🎙️
 
-Voice Chat AI is a project that allows you to interact with different AI characters using speech. You can choose between various characters, each with unique personalities and voices. Have a serious conversation with Albert Einstein or role play with the OS from the movie HER.
+Magic Chat is a project that allows you to interact with different AI characters using speech. You can choose between various characters, each with unique personalities and voices. Have a serious conversation with Albert Einstein or role play with the OS from the movie HER.
 
 You can run all locally, you can use openai for chat and voice, you can mix between the two. You can use ElevenLabs voices with ollama models all controlled from a Web UI. Use different chat providers like Anthropic, xAI, Ollama, OpenAI.
 
@@ -16,7 +16,7 @@ Check out the game and story documentation:
 
 ## Quick Start
 
-Get up and running fast with Voice Chat AI! 🔊
+Get up and running fast with Magic Chat! 🔊
 
 - [**Install Locally**](#installation): Set up with Python 3.10 on Windows, Linux or MacOS.
 - [**Run with Docker**](#install-with-docker): Use Docker run or Docker Compose
@@ -26,8 +26,6 @@ Get up and running fast with Voice Chat AI! 🔊
 - [**Game & Story Modes**](#game--story-modes): Explore interactive games and immersive storytelling experiences.
 - [**Add New Characters**](#adding-new-characters): Add new characters to the project.
 - [**Troubleshooting**](#troubleshooting): Fix common audio or CUDA errors.
-
-![Ai-Speech](https://imagedelivery.net/WfhVb8dSNAAvdXUdMfBuPQ/ed0edfea-265d-4c23-d11d-0b5ba0f02d00/public)
 
 ## Features
 
@@ -41,8 +39,6 @@ Get up and running fast with Voice Chat AI! 🔊
 - **HUGE selection of built in Characters**: Talk with the funniest and most insane AI characters! Play escape room games, follow story lines, and more.
 - **Interactive Games & Stories**: Enjoy 15+ different game types (word puzzles, trivia, escape rooms) and interactive storytelling adventures.
 - **Docker Support**: Prebuilt image from dockerhub or build yor own image with or without nvidia cuda. Can run on CPU only.
-
-https://github.com/user-attachments/assets/ea8d401c-83b4-4a45-af2a-0b3a50e1a0be
 
 ## Installation
 
@@ -137,7 +133,7 @@ To use Kokoro TTS:
    - Set `TTS_PROVIDER=kokoro` - use it as the TTS_PROVIDER in .env or select in UI.
    - Select a voice with `KOKORO_TTS_VOICE=af_bella` (female) or `KOKORO_TTS_VOICE=am_onyx` (male) - defaults to use in .env, all voices will show in UI.
 
-2. Start the Voice Chat AI application normally
+2. Start the Magic Chat application normally
 
 Kokoro TTS operates locally on your machine or local network, requiring no API key or internet connection once installed. The server supports GPU acceleration for faster processing if you have compatible NVIDIA hardware.
 
@@ -544,22 +540,14 @@ http://localhost:8000/
 
 ## OpenAI Enhanced
 
-![Image](https://github.com/user-attachments/assets/5c62bbfc-7f1d-48a8-8a83-4a2488a1bc0b)
-
 OpenAI Enhanced Mode is a new feature that allows you to use the OpenAI API to generate TTS and transcription. It uses the `gpt-4o-mini-tts` and `gpt-4o-mini-transcribe` models.
 You can learn more about it here: https://platform.openai.com/docs/guides/text-to-speech
-
-You can find the demo here: https://www.openai.fm/
 
 By adding Voice Instructions in the system prompt you can guide the AI to respond in a certain way.
 
 ## OpenAI Realtime
 
 The OpenAI Realtime feature uses WebRTC to connect directly to OpenAI's Realtime API, enabling continuous voice streaming with minimal latency for the most natural conversation experience.
-
-### RealTime Features
-
-https://github.com/user-attachments/assets/d1cc9ca4-e750-4c36-816e-6f27b8caeec1
 
 - **Direct WebRTC Connection**: Connect directly to OpenAI's API for the lowest possible latency.
 - **Zero Turn-Taking**: No need to wait for the AI to finish before speaking - interrupt naturally like a real conversation.
@@ -752,15 +740,7 @@ If you continue to have issues after these steps, creating a fresh virtual envir
 
 ## Watch the Demos
 
-OpenAI RealTime
-
-https://github.com/user-attachments/assets/d6ed3c62-fe07-418c-9708-673f21fcf5c2
-
 ---
-
-OpenAI Enhanced
-
-[![Watch the video](https://img.youtube.com/vi/TjHwVwzUUvM/maxresdefault.jpg)](https://youtu.be/TjHwVwzUUvM)
 
 Click on the thumbnail to open the video☝️
 
@@ -770,8 +750,6 @@ GPU Only mode CLI
 
 100% local - ollama llama3, xtts-v2
 
-[![Watch the video](https://img.youtube.com/vi/WsWbYnITdCo/maxresdefault.jpg)](https://youtu.be/WsWbYnITdCo)
-
 Click on the thumbnail to open the video☝️
 
 ---
@@ -779,8 +757,6 @@ Click on the thumbnail to open the video☝️
 CPU Only mode CLI
 
 Alien conversation using openai gpt4o and openai speech for tts.
-
-[![Watch the video](https://img.youtube.com/vi/d5LbRLhWa5c/maxresdefault.jpg)](https://youtu.be/d5LbRLhWa5c)
 
 Click on the thumbnail to open the video☝️
 
@@ -828,13 +804,3 @@ Features:
 ## License
 
 This project is licensed under the MIT License.
-
-## Star History
-
-<a href="https://star-history.com/#bigsk1/voice-chat-ai&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=bigsk1/voice-chat-ai&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=bigsk1/voice-chat-ai&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=bigsk1/voice-chat-ai&type=Date" />
- </picture>
-</a>
