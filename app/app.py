@@ -40,7 +40,7 @@ OPENAI_BASE_URL = os.getenv('OPENAI_BASE_URL', 'https://api.openai.com/v1/chat/c
 XAI_API_KEY = os.getenv('XAI_API_KEY')
 XAI_MODEL = os.getenv('XAI_MODEL', 'grok-2-1212')
 XAI_BASE_URL = os.getenv('XAI_BASE_URL', 'https://api.x.ai/v1')
-OLLAMA_MODEL = os.getenv('OLLAMA_MODEL', 'llama3.2')
+OLLAMA_MODEL = os.getenv('OLLAMA_MODEL', 'llama3:latest')
 OLLAMA_BASE_URL = os.getenv('OLLAMA_BASE_URL', 'http://localhost:11434')
 ANTHROPIC_API_KEY = os.getenv('ANTHROPIC_API_KEY')
 ANTHROPIC_MODEL = os.getenv('ANTHROPIC_MODEL', 'claude-3-7-sonnet-20250219')
@@ -718,7 +718,7 @@ def chatgpt_streamed(user_input, system_message, mood_prompt, conversation_histo
         }
         try:
             print(f"Debug: Sending request to Ollama: {OLLAMA_BASE_URL}/v1/chat/completions")
-            response = requests.post(f'{OLLAMA_BASE_URL}/v1/chat/completions', headers=headers, json=payload, stream=True, timeout=30)
+            response = requests.post(f'{OLLAMA_BASE_URL}/v1/chat/completions', headers=headers, json=payload, stream=True, timeout=120)
             response.raise_for_status()
 
             line_buffer = ""
@@ -1090,7 +1090,7 @@ async def analyze_image(image_path, question_prompt):
         }
         try:
             async with aiohttp.ClientSession() as session:
-                async with session.post(f'{OLLAMA_BASE_URL}/api/generate', headers=headers, json=payload, timeout=30) as response:
+                async with session.post(f'{OLLAMA_BASE_URL}/api/generate', headers=headers, json=payload, timeout=120) as response:
                     print(f"Response status code: {response.status}")
                     if response.status == 200:
                         print("Using ollama for image analysis")

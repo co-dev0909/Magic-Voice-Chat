@@ -1,5 +1,5 @@
 /**
- * Debug Panel for Voice Chat AI
+ * Debug Panel for Magic Voice
  * Provides a simple interface for debugging connections and data flow
  */
 
