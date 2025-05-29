@@ -2,8 +2,6 @@
 
 **Magic Voice Chat** lets you talk with AI characters in real time using your voice — like chatting with Einstein, a space wizard, or the OS from *Her*. It's fast, expressive, hilarious, and fully customizable. Run locally, use your favorite models (OpenAI, Anthropic, xAI, Ollama), and switch between multiple voices (OpenAI TTS, ElevenLabs, XTTS, or Kokoro TTS) — all from a slick Web UI.
 
-![screenshot](https://github.com/bigsk1/voice-chat-ai/assets/demo_image.jpg)
-
 ---
 
 ## 🚀 Features
