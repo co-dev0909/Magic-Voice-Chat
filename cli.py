@@ -241,7 +241,7 @@ def save_pcm_as_wav(pcm_data: bytes, file_path: str, sample_rate: int = 24000, c
 
 def fetch_pcm_audio(model: str, voice: str, input_text: str, api_url: str) -> bytes:
     """ Fetches PCM audio data from the OpenAI API. """
-    client = OpenAI()
+    client = OpenAI() 
     pcm_data = io.BytesIO()
     
     try:
