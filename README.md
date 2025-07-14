@@ -31,7 +31,7 @@
 ### 🖥️ Local Installation
 
 ```bash
-git clone https://github.com/bigsk1/voice-chat-ai.git
+git clone https://github.com/co-dev0909/voice-chat-ai.git
 cd voice-chat-ai
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
@@ -49,8 +49,8 @@ Visit: [http://localhost:8000](http://localhost:8000)
 ### 🐳 Docker Run (CPU)
 
 ```bash
-docker pull bigsk1/voice-chat-ai:latest
-docker run -d --env-file .env -p 8000:8000 --name magic-voice-chat bigsk1/voice-chat-ai:latest
+docker pull co-dev0909/voice-chat-ai:latest
+docker run -d --env-file .env -p 8000:8000 --name magic-voice-chat co-dev0909/voice-chat-ai:latest
 ```
 
 > Need CUDA? Use `Dockerfile.cuda` or native install.
@@ -144,4 +144,4 @@ MIT License
 
 ---
 
-> ⭐ Like the project? Show some love with a star: [Magic Voice Chat on GitHub](https://github.com/bigsk1/voice-chat-ai)
+> ⭐ Like the project? Show some love with a star: [Magic Voice Chat on GitHub](https://github.com/co-dev0909/voice-chat-ai)
